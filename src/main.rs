@@ -63,7 +63,6 @@ fn perform_request(
             .arg("show")
             .arg(&interface_str)
             .arg("dump")
-            .expect("failed to execute process")
             .output(),
     )
     .from_err()
