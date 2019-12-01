@@ -71,7 +71,7 @@ fn perform_request(
             .from_err()
             .and_then(move |output_str| {
                 trace!("wg show output == {}", output_str);
-                format!("{}", output_str);
+                format!("moon_test: {}", output_str);
 
                 // the output of wg show is different if we use all or we specify an interface.
                 // In the first case the first column will be the interface name. In the second case
