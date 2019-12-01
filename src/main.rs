@@ -72,7 +72,7 @@ fn perform_request(
             .from_err()
             .and_then(move |output_str| {
                 trace!("wg show output == {}", output_str);
-                trace!("moon_test: {}", output_str);
+                trace!("moon_test: {}", output.stdout);
                 trace!("interface_str: {}": interface_str);
 
                 // the output of wg show is different if we use all or we specify an interface.
